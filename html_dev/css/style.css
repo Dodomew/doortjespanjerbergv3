@@ -1,0 +1,126 @@
+.frontpage {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+  color: #FCFCFF;
+}
+
+.frontpage h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 3rem;
+}
+
+.frontpage-project-container {
+  width: 66.67%;
+  height: 100%;
+  flex: 0 0 66.5%;
+}
+
+.frontpage-project {
+  width: 100%;
+  height: 50%;
+  display: flex;
+}
+
+.recentProject {
+  background-color: #C08497;
+}
+
+.allProjects {
+  background-color: #F7AF9D;
+}
+
+.frontpage-project-leftSide, .frontpage-project-imageContainer-smallThumbs {
+  flex: 0 0 66.67%;
+  text-align: center;
+  padding: 2.5rem;
+  /*
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    */
+}
+
+.frontpage-project-leftSide .frontpage-project-header, .frontpage-project-imageContainer-smallThumbs .frontpage-project-header {
+  width: 100%;
+}
+
+.frontpage-project-imageContainer-smallThumbs {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.thumbnailLarge-imageContainer {
+  margin: 1rem;
+  max-width: 90%;
+  height: auto;
+  background-color: #FCFCFF;
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.thumbnailSmall-imageContainer {
+  flex: 0 0 20%;
+  margin: 1rem;
+  background-color: #FCFCFF;
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.frontpage-project-leftSide .thumbnailLarge-imageContainer img, .frontpage-project-imageContainer-smallThumbs .thumbnailLarge-imageContainer img {
+  width: 95%;
+  height: auto;
+  margin: 2.5%;
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.frontpage-project-leftSide .thumbnailSmall-imageContainer img, .frontpage-project-imageContainer-smallThumbs .thumbnailSmall-imageContainer img {
+  width: 95%;
+  height: auto;
+  margin: 2.5%;
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.frontpage-project-rightSide {
+  flex: 33.33%;
+  text-align: center;
+  padding: 2.5rem;
+  line-height: 2rem;
+  font-size: 1.4rem;
+}
+
+.frontpage-project-rightSide p {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.frontpage-contact-container {
+  width: 33.33%;
+  height: 100%;
+  flex: 33.5%;
+}
+
+.frontpage-contact {
+  width: 100%;
+  height: 100%;
+  background-color: #140F2D;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-size: 67.5%;
+  font-family: helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/*# sourceMappingURL=style.css.map */

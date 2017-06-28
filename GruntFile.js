@@ -30,7 +30,7 @@ module.exports = function(grunt)
                   cwd: 'html_dev', //I sync files in this location
                   src: ['**/*.js', '**/*.css', '**/*.php', '**/*.html', '**/*.jpg', //check all files with these extensions
                   '!**/node_modules/**' /* but exclude txt files */ ],
-                  dest: 'C:/wamp64/www/MemoryGame' //any output I make is put in here
+                  dest: 'C:/wamp64/www/doortjespanjerbergv3' //any output I make is put in here
                 } // makes all src relative to Current Working Directory or cwd
             ],
 
@@ -46,7 +46,7 @@ module.exports = function(grunt)
                 {
                   cwd: 'html_dev', //I sync files in this location
                   src: ['**/*.js', '**/*.css', '**/*.php', '**/*.html', '**/*.jpg'],
-                  dest: 'C:/wamp64/www/MemoryGame'
+                  dest: 'C:/wamp64/www/doortjespanjerbergv3'
               } 	// makes all src relative to cwd
             ],
 
@@ -138,16 +138,16 @@ module.exports = function(grunt)
 	);
 
 	//2. Load in my wanted tasks
-	grunt.loadNpmTasks('grunt-contrib-uglify');
+	// grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-watch');
-	grunt.loadNpmTasks('grunt-contrib-htmlmin');
-	grunt.loadNpmTasks('grunt-contrib-cssmin');
+	// grunt.loadNpmTasks('grunt-contrib-htmlmin');
+	// grunt.loadNpmTasks('grunt-contrib-cssmin');
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-sync');
 
 	//3. Set up my tasks or 'register'
 	grunt.registerTask('default', ['watch']);
-	grunt.registerTask('minify', ['uglify', 'cssmin', 'htmlmin']);
+	// grunt.registerTask('minify', ['uglify', 'cssmin', 'htmlmin']);
 //(taskName, taskList) . 'default' is run when you do not run specific grunt tasks, so you run in CMD 'grunt'
 	//grunt.registerTask('release',['sass', 'sync:live', 'minify', 'upload']); here the task 'release' runs the subtasks 'sass', 'sync:live', 'minify', 'upload' =>
 	//in CMD write 'grunt release'. Run specific task : 'grunt release:sass'

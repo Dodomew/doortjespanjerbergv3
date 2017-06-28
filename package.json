@@ -1,36 +1,28 @@
 {
-  "name": "memory",
+  "name": "doortjespanjerberg-redesign",
   "version": "1.0.0",
-  "description": "Memory the game made in JS",
+  "description": "Redesign of doortjespanjerberg.com",
   "main": "GruntFile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Dodomew/Memory.git"
+    "url": "git+https://github.com/Dodomew/doortjespanjerbergv3.git"
   },
   "keywords": [
-    "memory",
-    "javascript"
+    "redesign",
+    "grid",
+    "layout",
+    "colors"
   ],
   "author": "Doortje Spanjerberg",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Dodomew/Memory/issues"
+    "url": "https://github.com/Dodomew/doortjespanjerbergv3/issues"
   },
-  "homepage": "https://github.com/Dodomew/Memory#readme",
+  "homepage": "https://github.com/Dodomew/doortjespanjerbergv3#readme",
   "devDependencies": {
-    "grunt": "^1.0.1",
-    "grunt-contrib-cssmin": "^1.0.2",
-    "grunt-contrib-htmlmin": "^2.0.0",
-    "grunt-contrib-sass": "^1.0.0",
-    "grunt-contrib-uglify": "^2.0.0",
-    "grunt-contrib-watch": "^1.0.0",
-    "grunt-sync": "^0.6.2"
-  },
-  "dependencies": {
-    "grunt": "^1.0.1",
     "grunt-contrib-sass": "^1.0.0",
     "grunt-contrib-watch": "^1.0.0",
     "grunt-sync": "^0.6.2"
