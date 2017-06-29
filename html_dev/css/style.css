@@ -1,119 +1,188 @@
+/* line 1, ../scss/partials/_frontpage.scss */
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 9, ../scss/partials/_frontpage.scss */
 .frontpage {
   width: 100%;
   height: 100%;
   display: flex;
-  overflow: hidden;
+  flex-wrap: nowrap;
   color: #FCFCFF;
 }
 
-.frontpage h1 {
-  margin: 0;
-  padding: 0;
-  font-size: 3rem;
-}
-
-.frontpage-project-container {
-  width: 66.67%;
-  height: 100%;
-  flex: 0 0 66.5%;
-}
-
-.frontpage-project {
-  width: 100%;
-  height: 50%;
+/* line 20, ../scss/partials/_frontpage.scss */
+.frontpage__projectContainer {
+  flex: 0 0 67%;
   display: flex;
+  flex-wrap: wrap;
 }
 
-.recentProject {
-  background-color: #C08497;
+/* line 28, ../scss/partials/_frontpage.scss */
+.projects {
+  flex: 0 0 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  height: 50%;
 }
 
-.allProjects {
+/* line 38, ../scss/partials/_frontpage.scss */
+.frontpage__recentProjectAndTextContainer {
   background-color: #F7AF9D;
 }
 
-.frontpage-project-leftSide, .frontpage-project-imageContainer-smallThumbs {
-  flex: 0 0 66.67%;
-  text-align: center;
-  padding: 2.5rem;
-  /*
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-    */
-}
-
-.frontpage-project-leftSide .frontpage-project-header, .frontpage-project-imageContainer-smallThumbs .frontpage-project-header {
-  width: 100%;
-}
-
-.frontpage-project-imageContainer-smallThumbs {
-  flex-direction: row;
-  flex-wrap: wrap;
+/* line 43, ../scss/partials/_frontpage.scss */
+.frontpage__recentProjectContainer {
+  flex: 0 0 67%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
 }
 
-.thumbnailLarge-imageContainer {
-  margin: 1rem;
-  max-width: 90%;
-  height: auto;
-  background-color: #FCFCFF;
-  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+/* line 53, ../scss/partials/_frontpage.scss */
+.frontpage__allProjectsAndTextContainer {
+  background-color: #C08497;
 }
 
-.thumbnailSmall-imageContainer {
-  flex: 0 0 20%;
-  margin: 1rem;
-  background-color: #FCFCFF;
-  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+/* line 58, ../scss/partials/_frontpage.scss */
+.frontpage__allProjectsContainer {
+  flex: 0 0 67%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.frontpage-project-leftSide .thumbnailLarge-imageContainer img, .frontpage-project-imageContainer-smallThumbs .thumbnailLarge-imageContainer img {
-  width: 95%;
-  height: auto;
-  margin: 2.5%;
-  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+/* line 68, ../scss/partials/_frontpage.scss */
+.frontpage__projectContainer--title {
+  margin: 0;
+  padding: 0;
 }
 
-.frontpage-project-leftSide .thumbnailSmall-imageContainer img, .frontpage-project-imageContainer-smallThumbs .thumbnailSmall-imageContainer img {
-  width: 95%;
-  height: auto;
-  margin: 2.5%;
-  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+/* line 74, ../scss/partials/_frontpage.scss */
+.frontpage__recentProjectContainer--flexImageGallery {
+  width: 90%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: space-between;
 }
 
-.frontpage-project-rightSide {
-  flex: 33.33%;
-  text-align: center;
-  padding: 2.5rem;
-  line-height: 2rem;
-  font-size: 1.4rem;
-}
-
-.frontpage-project-rightSide p {
+/* line 88, ../scss/partials/_frontpage.scss */
+.flexImageGallery__imageContainer {
+  background-color: white;
   position: relative;
+  min-width: 100px;
+  min-height: 100px;
+  clip-path: polygon(94.33013% 47.5%, 94.92404% 49.13176%, 94.92404% 50.86824%, 94.33013% 52.5%, 74.33013% 87.14102%, 73.21394% 88.47124%, 71.7101% 89.33948%, 70% 89.64102%, 30% 89.64102%, 28.2899% 89.33948%, 26.78606% 88.47124%, 25.66987% 87.14102%, 5.66987% 52.5%, 5.07596% 50.86824%, 5.07596% 49.13176%, 5.66987% 47.5%, 25.66987% 12.85898%, 26.78606% 11.52876%, 28.2899% 10.66052%, 30% 10.35898%, 70% 10.35898%, 71.7101% 10.66052%, 73.21394% 11.52876%, 74.33013% 12.85898%);
+  -webkit-clip-path: polygon(94.33013% 47.5%, 94.92404% 49.13176%, 94.92404% 50.86824%, 94.33013% 52.5%, 74.33013% 87.14102%, 73.21394% 88.47124%, 71.7101% 89.33948%, 70% 89.64102%, 30% 89.64102%, 28.2899% 89.33948%, 26.78606% 88.47124%, 25.66987% 87.14102%, 5.66987% 52.5%, 5.07596% 50.86824%, 5.07596% 49.13176%, 5.66987% 47.5%, 25.66987% 12.85898%, 26.78606% 11.52876%, 28.2899% 10.66052%, 30% 10.35898%, 70% 10.35898%, 71.7101% 10.66052%, 73.21394% 11.52876%, 74.33013% 12.85898%);
+}
+
+/* line 102, ../scss/partials/_frontpage.scss */
+.flexImageGallery__largeThumbnail {
+  width: 350px;
+  height: 350px;
+}
+
+/* line 108, ../scss/partials/_frontpage.scss */
+.flexImageGallery__smallThumbnail {
+  width: 175px;
+  height: 175px;
+}
+
+/* line 114, ../scss/partials/_frontpage.scss */
+.imageContainer--thumbnail {
+  width: calc(100% - 1em);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  clip-path: polygon(94.33013% 47.5%, 94.92404% 49.13176%, 94.92404% 50.86824%, 94.33013% 52.5%, 74.33013% 87.14102%, 73.21394% 88.47124%, 71.7101% 89.33948%, 70% 89.64102%, 30% 89.64102%, 28.2899% 89.33948%, 26.78606% 88.47124%, 25.66987% 87.14102%, 5.66987% 52.5%, 5.07596% 50.86824%, 5.07596% 49.13176%, 5.66987% 47.5%, 25.66987% 12.85898%, 26.78606% 11.52876%, 28.2899% 10.66052%, 30% 10.35898%, 70% 10.35898%, 71.7101% 10.66052%, 73.21394% 11.52876%, 74.33013% 12.85898%);
+  -webkit-clip-path: polygon(94.33013% 47.5%, 94.92404% 49.13176%, 94.92404% 50.86824%, 94.33013% 52.5%, 74.33013% 87.14102%, 73.21394% 88.47124%, 71.7101% 89.33948%, 70% 89.64102%, 30% 89.64102%, 28.2899% 89.33948%, 26.78606% 88.47124%, 25.66987% 87.14102%, 5.66987% 52.5%, 5.07596% 50.86824%, 5.07596% 49.13176%, 5.66987% 47.5%, 25.66987% 12.85898%, 26.78606% 11.52876%, 28.2899% 10.66052%, 30% 10.35898%, 70% 10.35898%, 71.7101% 10.66052%, 73.21394% 11.52876%, 74.33013% 12.85898%);
+}
+
+/* line 129, ../scss/partials/_frontpage.scss */
+.frontpage__textContainer {
+  flex: 0 0 33%;
+  position: relative;
+  line-height: 2.5rem;
+  font-size: 1.6rem;
+}
+
+/* line 139, ../scss/partials/_frontpage.scss */
+.textContainer__textSummary {
+  width: 80%;
+  position: absolute;
   top: 50%;
   transform: translateY(-50%);
 }
 
-.frontpage-contact-container {
-  width: 33.33%;
-  height: 100%;
-  flex: 33.5%;
-}
-
-.frontpage-contact {
-  width: 100%;
-  height: 100%;
+/* line 148, ../scss/partials/_frontpage.scss */
+.frontpage__contactMeContainer {
   background-color: #140F2D;
+  flex: 0 0 33%;
+  line-height: 5rem;
+  position: relative;
 }
 
+/* line 159, ../scss/partials/_frontpage.scss */
+.contactMeContainer__content {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-75%);
+}
+
+/* line 171, ../scss/partials/_frontpage.scss */
+.contactMeContainer__content--name {
+  font-size: 4rem;
+}
+
+/* line 176, ../scss/partials/_frontpage.scss */
+.contactMeContainer__content--title {
+  font-size: 3rem;
+}
+
+/* line 181, ../scss/partials/_frontpage.scss */
+.contactMeContainer__content--contact {
+  font-size: 2rem;
+}
+
+/* line 186, ../scss/partials/_frontpage.scss */
+.contactMeContainer__socialMedia {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* line 194, ../scss/partials/_frontpage.scss */
+.socialMedia--hexagon {
+  clip-path: polygon(94.33013% 47.5%, 94.92404% 49.13176%, 94.92404% 50.86824%, 94.33013% 52.5%, 74.33013% 87.14102%, 73.21394% 88.47124%, 71.7101% 89.33948%, 70% 89.64102%, 30% 89.64102%, 28.2899% 89.33948%, 26.78606% 88.47124%, 25.66987% 87.14102%, 5.66987% 52.5%, 5.07596% 50.86824%, 5.07596% 49.13176%, 5.66987% 47.5%, 25.66987% 12.85898%, 26.78606% 11.52876%, 28.2899% 10.66052%, 30% 10.35898%, 70% 10.35898%, 71.7101% 10.66052%, 73.21394% 11.52876%, 74.33013% 12.85898%);
+  -webkit-clip-path: polygon(94.33013% 47.5%, 94.92404% 49.13176%, 94.92404% 50.86824%, 94.33013% 52.5%, 74.33013% 87.14102%, 73.21394% 88.47124%, 71.7101% 89.33948%, 70% 89.64102%, 30% 89.64102%, 28.2899% 89.33948%, 26.78606% 88.47124%, 25.66987% 87.14102%, 5.66987% 52.5%, 5.07596% 50.86824%, 5.07596% 49.13176%, 5.66987% 47.5%, 25.66987% 12.85898%, 26.78606% 11.52876%, 28.2899% 10.66052%, 30% 10.35898%, 70% 10.35898%, 71.7101% 10.66052%, 73.21394% 11.52876%, 74.33013% 12.85898%);
+  background-color: red;
+  width: 100px;
+  height: 100px;
+}
+
+/* line 205, ../scss/partials/_frontpage.scss */
+.socialMedia--image {
+  width: 50px;
+  height: 50px;
+}
+
+/* line 8, ../scss/style.scss */
 html, body {
   width: 100%;
   height: 100%;
@@ -122,5 +191,3 @@ html, body {
   margin: 0;
   padding: 0;
 }
-
-/*# sourceMappingURL=style.css.map */

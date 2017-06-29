@@ -8,3 +8,50 @@ $ebony : #0D0A1D;
 
 // COLOR VARIABLE FOR TEXT
 $titanWhite : #FCFCFF;
+
+// SIZE VARIABLES
+// >1440px
+$frontpage__largeThumbnail : 350px;
+$frontpage__smallThumbnail : 175px;
+
+// >1024px
+//$frontpage__largeThumbnail : 300px;
+//$frontpage__smallThumbnail : 150px;
+
+// >640px
+//$frontpage__largeThumbnail : 250px;
+//$frontpage__smallThumbnail : 125px;
+
+// MIXINS
+// credit to Ana Tudor : https://codepen.io/thebabydino/pen/XbxKbL
+@mixin rounded-hex($main-radius: 30%, $rounding-radius: 10%, $rotated: false, $precision: 20)
+{
+	$n: 6;
+	$central-angle: 360deg/$n;
+	$angle: ($n - 2)*180deg/$n;
+	$max-var-angle: 2*(90deg - $angle/2);
+	$precision: 3;
+	$unit-var-angle: $max-var-angle/$precision;
+
+	$r-diff: $main-radius + $rounding-radius;
+
+	$points: ();
+
+	@for $i from 0 to $n
+	{
+		$vertex-angle: $i*$central-angle + if($rotated, -90deg, 0deg);
+		$vertex-x: 50% + $r-diff*cos($vertex-angle);
+		$vertex-y: 50% + $r-diff*sin($vertex-angle);
+
+		@for $j from 0 through $precision
+		{
+			$curr-angle: $vertex-angle + ($j - .5*$precision)*$unit-var-angle;
+			$x: $vertex-x + $rounding-radius*cos($curr-angle);
+			$y: $vertex-y + $rounding-radius*sin($curr-angle);
+
+			$points: $points, $x $y;
+		}
+	}
+	clip-path: polygon($points);
+	-webkit-clip-path: polygon($points);
+}
