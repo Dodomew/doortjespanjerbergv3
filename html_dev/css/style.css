@@ -33,9 +33,10 @@ h1 {
 /* line 38, ../scss/partials/_frontpage.scss */
 .frontpage__recentProjectAndTextContainer {
   background-color: #F7AF9D;
+  background: linear-gradient(#F7AF9D, #E3A584);
 }
 
-/* line 43, ../scss/partials/_frontpage.scss */
+/* line 44, ../scss/partials/_frontpage.scss */
 .frontpage__recentProjectContainer {
   flex: 0 0 67%;
   display: flex;
@@ -44,12 +45,13 @@ h1 {
   justify-content: center;
 }
 
-/* line 53, ../scss/partials/_frontpage.scss */
+/* line 54, ../scss/partials/_frontpage.scss */
 .frontpage__allProjectsAndTextContainer {
   background-color: #C08497;
+  background: linear-gradient(#C08497, #BD6B73);
 }
 
-/* line 58, ../scss/partials/_frontpage.scss */
+/* line 60, ../scss/partials/_frontpage.scss */
 .frontpage__allProjectsContainer {
   flex: 0 0 67%;
   display: flex;
@@ -58,13 +60,13 @@ h1 {
   justify-content: center;
 }
 
-/* line 68, ../scss/partials/_frontpage.scss */
+/* line 70, ../scss/partials/_frontpage.scss */
 .frontpage__projectContainer--title {
   margin: 0;
   padding: 0;
 }
 
-/* line 74, ../scss/partials/_frontpage.scss */
+/* line 76, ../scss/partials/_frontpage.scss */
 .frontpage__recentProjectContainer--flexImageGallery {
   width: 90%;
   margin: 0;
@@ -77,7 +79,7 @@ h1 {
   align-content: space-between;
 }
 
-/* line 88, ../scss/partials/_frontpage.scss */
+/* line 90, ../scss/partials/_frontpage.scss */
 .flexImageGallery__imageContainer {
   background-color: white;
   position: relative;
@@ -87,19 +89,19 @@ h1 {
   -webkit-clip-path: polygon(94.33013% 47.5%, 94.92404% 49.13176%, 94.92404% 50.86824%, 94.33013% 52.5%, 74.33013% 87.14102%, 73.21394% 88.47124%, 71.7101% 89.33948%, 70% 89.64102%, 30% 89.64102%, 28.2899% 89.33948%, 26.78606% 88.47124%, 25.66987% 87.14102%, 5.66987% 52.5%, 5.07596% 50.86824%, 5.07596% 49.13176%, 5.66987% 47.5%, 25.66987% 12.85898%, 26.78606% 11.52876%, 28.2899% 10.66052%, 30% 10.35898%, 70% 10.35898%, 71.7101% 10.66052%, 73.21394% 11.52876%, 74.33013% 12.85898%);
 }
 
-/* line 102, ../scss/partials/_frontpage.scss */
+/* line 104, ../scss/partials/_frontpage.scss */
 .flexImageGallery__largeThumbnail {
   width: 350px;
   height: 350px;
 }
 
-/* line 108, ../scss/partials/_frontpage.scss */
+/* line 110, ../scss/partials/_frontpage.scss */
 .flexImageGallery__smallThumbnail {
   width: 175px;
   height: 175px;
 }
 
-/* line 114, ../scss/partials/_frontpage.scss */
+/* line 116, ../scss/partials/_frontpage.scss */
 .imageContainer--thumbnail {
   width: calc(100% - 1em);
   position: absolute;
@@ -110,7 +112,7 @@ h1 {
   -webkit-clip-path: polygon(94.33013% 47.5%, 94.92404% 49.13176%, 94.92404% 50.86824%, 94.33013% 52.5%, 74.33013% 87.14102%, 73.21394% 88.47124%, 71.7101% 89.33948%, 70% 89.64102%, 30% 89.64102%, 28.2899% 89.33948%, 26.78606% 88.47124%, 25.66987% 87.14102%, 5.66987% 52.5%, 5.07596% 50.86824%, 5.07596% 49.13176%, 5.66987% 47.5%, 25.66987% 12.85898%, 26.78606% 11.52876%, 28.2899% 10.66052%, 30% 10.35898%, 70% 10.35898%, 71.7101% 10.66052%, 73.21394% 11.52876%, 74.33013% 12.85898%);
 }
 
-/* line 129, ../scss/partials/_frontpage.scss */
+/* line 131, ../scss/partials/_frontpage.scss */
 .frontpage__textContainer {
   flex: 0 0 33%;
   position: relative;
@@ -118,7 +120,7 @@ h1 {
   font-size: 1.6rem;
 }
 
-/* line 139, ../scss/partials/_frontpage.scss */
+/* line 141, ../scss/partials/_frontpage.scss */
 .textContainer__textSummary {
   width: 80%;
   position: absolute;
@@ -126,15 +128,16 @@ h1 {
   transform: translateY(-50%);
 }
 
-/* line 148, ../scss/partials/_frontpage.scss */
+/* line 150, ../scss/partials/_frontpage.scss */
 .frontpage__contactMeContainer {
   background-color: #140F2D;
+  background: linear-gradient(#140F2D, #130e2b);
   flex: 0 0 33%;
   line-height: 5rem;
   position: relative;
 }
 
-/* line 159, ../scss/partials/_frontpage.scss */
+/* line 162, ../scss/partials/_frontpage.scss */
 .contactMeContainer__content {
   width: 100%;
   margin: auto;
@@ -144,22 +147,27 @@ h1 {
   transform: translateY(-75%);
 }
 
-/* line 171, ../scss/partials/_frontpage.scss */
+/* line 174, ../scss/partials/_frontpage.scss */
+.contactMeContainer__content div:nth-child(2) {
+  margin-bottom: 1em;
+}
+
+/* line 179, ../scss/partials/_frontpage.scss */
 .contactMeContainer__content--name {
   font-size: 4rem;
 }
 
-/* line 176, ../scss/partials/_frontpage.scss */
+/* line 184, ../scss/partials/_frontpage.scss */
 .contactMeContainer__content--title {
   font-size: 3rem;
 }
 
-/* line 181, ../scss/partials/_frontpage.scss */
+/* line 189, ../scss/partials/_frontpage.scss */
 .contactMeContainer__content--contact {
   font-size: 2rem;
 }
 
-/* line 186, ../scss/partials/_frontpage.scss */
+/* line 194, ../scss/partials/_frontpage.scss */
 .contactMeContainer__socialMedia {
   display: flex;
   flex-direction: row;
@@ -167,19 +175,25 @@ h1 {
   align-items: center;
 }
 
-/* line 194, ../scss/partials/_frontpage.scss */
+/* line 202, ../scss/partials/_frontpage.scss */
 .socialMedia--hexagon {
-  clip-path: polygon(94.33013% 47.5%, 94.92404% 49.13176%, 94.92404% 50.86824%, 94.33013% 52.5%, 74.33013% 87.14102%, 73.21394% 88.47124%, 71.7101% 89.33948%, 70% 89.64102%, 30% 89.64102%, 28.2899% 89.33948%, 26.78606% 88.47124%, 25.66987% 87.14102%, 5.66987% 52.5%, 5.07596% 50.86824%, 5.07596% 49.13176%, 5.66987% 47.5%, 25.66987% 12.85898%, 26.78606% 11.52876%, 28.2899% 10.66052%, 30% 10.35898%, 70% 10.35898%, 71.7101% 10.66052%, 73.21394% 11.52876%, 74.33013% 12.85898%);
-  -webkit-clip-path: polygon(94.33013% 47.5%, 94.92404% 49.13176%, 94.92404% 50.86824%, 94.33013% 52.5%, 74.33013% 87.14102%, 73.21394% 88.47124%, 71.7101% 89.33948%, 70% 89.64102%, 30% 89.64102%, 28.2899% 89.33948%, 26.78606% 88.47124%, 25.66987% 87.14102%, 5.66987% 52.5%, 5.07596% 50.86824%, 5.07596% 49.13176%, 5.66987% 47.5%, 25.66987% 12.85898%, 26.78606% 11.52876%, 28.2899% 10.66052%, 30% 10.35898%, 70% 10.35898%, 71.7101% 10.66052%, 73.21394% 11.52876%, 74.33013% 12.85898%);
-  background-color: red;
   width: 100px;
   height: 100px;
 }
 
-/* line 205, ../scss/partials/_frontpage.scss */
-.socialMedia--image {
-  width: 50px;
-  height: 50px;
+/* line 208, ../scss/partials/_frontpage.scss */
+.hexagon--github {
+  background-image: url("../images/icons/hex_github_logo_white.svg");
+}
+
+/* line 213, ../scss/partials/_frontpage.scss */
+.hexagon--linkedin {
+  background-image: url("../images/icons/hex_linkedin_logo_white.svg");
+}
+
+/* line 218, ../scss/partials/_frontpage.scss */
+.hexagon--mail {
+  background-image: url("../images/icons/hex_mail_logo_white.svg");
 }
 
 /* line 8, ../scss/style.scss */

@@ -38,6 +38,7 @@ h1
 .frontpage__recentProjectAndTextContainer
 {
   background-color: $roseBud;
+	background: linear-gradient($roseBud, $tumbleWeed);
 }
 
 .frontpage__recentProjectContainer
@@ -53,6 +54,7 @@ h1
 .frontpage__allProjectsAndTextContainer
 {
   background-color: $orientalPink;
+	background: linear-gradient($orientalPink, $contessa);
 }
 
 .frontpage__allProjectsContainer
@@ -148,6 +150,7 @@ h1
 .frontpage__contactMeContainer
 {
 	background-color: $haiti;
+	background: linear-gradient($haiti, $ebony);
 
 	flex: 0 0 33%;
 
@@ -166,6 +169,11 @@ h1
   position: absolute;
   top: 50%;
   transform: translateY(-75%);
+}
+
+.contactMeContainer__content div:nth-child(2)
+{
+	margin-bottom: 1em;
 }
 
 .contactMeContainer__content--name
@@ -193,17 +201,21 @@ h1
 
 .socialMedia--hexagon
 {
-  @include rounded-hex(
-    $main-radius: 35%,
-    $rounding-radius: 5%
-  );
-  background-color: red;
   width: 100px;
   height: 100px;
 }
 
-.socialMedia--image
+.hexagon--github
 {
-  width: 50px;
-  height: 50px;
+	background-image: url("../images/icons/hex_github_logo_white.svg");
+}
+
+.hexagon--linkedin
+{
+	background-image: url("../images/icons/hex_linkedin_logo_white.svg");
+}
+
+.hexagon--mail
+{
+	background-image: url("../images/icons/hex_mail_logo_white.svg");
 }
