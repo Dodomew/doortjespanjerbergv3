@@ -8,13 +8,15 @@ h1
 
 .frontpage
 {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
 
   display: flex;
   flex-wrap: nowrap;
 
   color: $titanWhite;
+
+	overflow: hidden;
 }
 
 .frontpage__projectContainer
@@ -115,7 +117,7 @@ h1
 
 .imageContainer--thumbnail
 {
-	width: calc(100% - 1em);
+	width: calc(100% - 1.5em);
 
 	position: absolute;
 	top: 50%;
@@ -168,12 +170,7 @@ h1
 
   position: absolute;
   top: 50%;
-  transform: translateY(-75%);
-}
-
-.contactMeContainer__content div:nth-child(2)
-{
-	margin-bottom: 1em;
+  transform: translateY(-50%);
 }
 
 .contactMeContainer__content--name
@@ -184,6 +181,7 @@ h1
 .contactMeContainer__content--title
 {
   font-size: 3rem;
+	margin-bottom: 1em;
 }
 
 .contactMeContainer__content--contact
@@ -195,7 +193,7 @@ h1
 {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 
@@ -203,19 +201,25 @@ h1
 {
   width: 100px;
   height: 100px;
+
+	margin-left: 1em;
+	margin-right: 1em;
 }
 
 .hexagon--github
 {
 	background-image: url("../images/icons/hex_github_logo_white.svg");
+	background-size: cover;
 }
 
 .hexagon--linkedin
 {
 	background-image: url("../images/icons/hex_linkedin_logo_white.svg");
+	background-size: cover;
 }
 
 .hexagon--mail
 {
 	background-image: url("../images/icons/hex_mail_logo_white.svg");
+	background-size: cover;
 }

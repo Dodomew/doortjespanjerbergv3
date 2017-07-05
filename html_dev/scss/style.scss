@@ -3,6 +3,7 @@
 
 //PARTIALS -> We use partials to organize our work: buttons in one file and typography in another, for example. This allows us to quickly find and make changes in complicated products. Partials are not “real” Sass files in that Sass watch will not convert partials to CSS. They must be imported into a regular .scss file.
 @import "partials/_frontpage";
+@import "partials/_frontpage_mediaquery";
 
 // STYLING
 html, body
