@@ -139,6 +139,11 @@ h1 {
 }
 
 /* line 164, ../scss/partials/_frontpage.scss */
+.displayNone {
+  display: block;
+}
+
+/* line 169, ../scss/partials/_frontpage.scss */
 .contactMeContainer__content {
   width: 100%;
   margin: auto;
@@ -148,23 +153,23 @@ h1 {
   transform: translateY(-50%);
 }
 
-/* line 176, ../scss/partials/_frontpage.scss */
+/* line 181, ../scss/partials/_frontpage.scss */
 .contactMeContainer__content--name {
   font-size: 4rem;
 }
 
-/* line 181, ../scss/partials/_frontpage.scss */
+/* line 186, ../scss/partials/_frontpage.scss */
 .contactMeContainer__content--title {
   font-size: 3rem;
   margin-bottom: 1em;
 }
 
-/* line 187, ../scss/partials/_frontpage.scss */
+/* line 192, ../scss/partials/_frontpage.scss */
 .contactMeContainer__content--contact {
   font-size: 2rem;
 }
 
-/* line 192, ../scss/partials/_frontpage.scss */
+/* line 197, ../scss/partials/_frontpage.scss */
 .contactMeContainer__socialMedia {
   display: flex;
   flex-direction: row;
@@ -172,7 +177,7 @@ h1 {
   align-items: center;
 }
 
-/* line 200, ../scss/partials/_frontpage.scss */
+/* line 205, ../scss/partials/_frontpage.scss */
 .socialMedia--hexagon {
   width: 100px;
   height: 100px;
@@ -180,19 +185,19 @@ h1 {
   margin-right: 1em;
 }
 
-/* line 209, ../scss/partials/_frontpage.scss */
+/* line 214, ../scss/partials/_frontpage.scss */
 .hexagon--github {
   background-image: url("../images/icons/hex_github_logo_white.svg");
   background-size: cover;
 }
 
-/* line 215, ../scss/partials/_frontpage.scss */
+/* line 220, ../scss/partials/_frontpage.scss */
 .hexagon--linkedin {
   background-image: url("../images/icons/hex_linkedin_logo_white.svg");
   background-size: cover;
 }
 
-/* line 221, ../scss/partials/_frontpage.scss */
+/* line 226, ../scss/partials/_frontpage.scss */
 .hexagon--mail {
   background-image: url("../images/icons/hex_mail_logo_white.svg");
   background-size: cover;
@@ -212,19 +217,67 @@ h1 {
   }
 
   /* line 16, ../scss/partials/_frontpage_mediaquery.scss */
+  .frontpage__recentProjectContainer {
+    flex: 0 0 100%;
+  }
+
+  /* line 21, ../scss/partials/_frontpage_mediaquery.scss */
   .frontpage__contactMeContainer {
     flex: 1 1 auto;
     order: 1;
     height: 75%;
+    padding-bottom: 1em;
   }
 
-  /* line 25, ../scss/partials/_frontpage_mediaquery.scss */
+  /* line 32, ../scss/partials/_frontpage_mediaquery.scss */
+  .frontpage__allProjectsContainer {
+    flex: 0 0 100%;
+  }
+
+  /* line 37, ../scss/partials/_frontpage_mediaquery.scss */
   .projects {
     flex: 1 1 auto;
     height: auto;
+    flex-wrap: wrap;
+    padding-top: 1em;
   }
 
-  /* line 31, ../scss/partials/_frontpage_mediaquery.scss */
+  /* line 46, ../scss/partials/_frontpage_mediaquery.scss */
+  .frontpage__recentProjectContainer--flexImageGallery {
+    width: auto;
+  }
+
+  /* line 51, ../scss/partials/_frontpage_mediaquery.scss */
+  .flexImageGallery__largeThumbnail {
+    width: 250px;
+    height: 250px;
+  }
+
+  /* line 57, ../scss/partials/_frontpage_mediaquery.scss */
+  .flexImageGallery__smallThumbnail {
+    width: 150px;
+    height: 150px;
+  }
+
+  /* line 63, ../scss/partials/_frontpage_mediaquery.scss */
+  .frontpage__textContainer {
+    flex: 0 0 100%;
+  }
+
+  /* line 68, ../scss/partials/_frontpage_mediaquery.scss */
+  .textContainer__textSummary {
+    margin: auto;
+    position: relative;
+    top: 0;
+    transform: translateY(0);
+  }
+
+  /* line 76, ../scss/partials/_frontpage_mediaquery.scss */
+  .displayNone {
+    display: none;
+  }
+
+  /* line 81, ../scss/partials/_frontpage_mediaquery.scss */
   .socialMedia--hexagon {
     width: 50px;
     height: 50px;
