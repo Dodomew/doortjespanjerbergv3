@@ -1,4 +1,4 @@
-@media(max-width: 1000px)
+@media(max-width: 1280px)
 {
   .frontpage
   {
@@ -48,18 +48,6 @@
     width: auto;
   }
 
-  .flexImageGallery__largeThumbnail
-  {
-    width: $frontpage__largeThumbnail--mediaQuery;
-    height: $frontpage__largeThumbnail--mediaQuery;
-  }
-
-  .flexImageGallery__smallThumbnail
-  {
-    width: $frontpage__smallThumbnail--mediaQuery;
-    height: $frontpage__smallThumbnail--mediaQuery;
-  }
-
   .frontpage__textContainer
   {
     flex: 0 0 100%;
@@ -68,6 +56,7 @@
   .textContainer__textSummary
   {
     margin: auto;
+    width: 80%;
     position: relative;
     top: 0;
     transform: translateY(0);
@@ -82,5 +71,55 @@
   {
     width: 50px;
     height: 50px;
+  }
+
+  .flexImageGallery__largeThumbnail
+  {
+    width: $frontpage__largeThumbnail--mediaQueryMedium;
+    height: $frontpage__largeThumbnail--mediaQueryMedium;
+  }
+
+  .flexImageGallery__smallThumbnail
+  {
+    width: $frontpage__smallThumbnail--mediaQueryMedium;
+    height: $frontpage__smallThumbnail--mediaQueryMedium;
+  }
+}
+
+@media (max-width: 1600px)
+{
+  .flexImageGallery__largeThumbnail
+  {
+    width: $frontpage__largeThumbnail--mediaQueryLarge;
+    height: $frontpage__largeThumbnail--mediaQueryLarge;
+  }
+
+  .flexImageGallery__smallThumbnail
+  {
+    width: $frontpage__smallThumbnail--mediaQueryLarge;
+    height: $frontpage__smallThumbnail--mediaQueryLarge;
+  }
+}
+
+@media (min-width: 1080px) and (max-width: 1280px)
+{
+  .textContainer__textSummary
+  {
+    width: 90%;
+  }
+}
+
+@media (max-width: 600px)
+{
+  .flexImageGallery__largeThumbnail
+  {
+    width: $frontpage__largeThumbnail--mediaQuerySmall;
+    height: $frontpage__largeThumbnail--mediaQuerySmall;
+  }
+
+  .flexImageGallery__smallThumbnail
+  {
+    width: $frontpage__smallThumbnail--mediaQuerySmall;
+    height: $frontpage__smallThumbnail--mediaQuerySmall;
   }
 }

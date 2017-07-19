@@ -14,16 +14,17 @@ $titanWhite : #FCFCFF;
 $frontpage__largeThumbnail : 350px;
 $frontpage__smallThumbnail : 175px;
 
-$frontpage__largeThumbnail--mediaQuery: 250px;
-$frontpage__smallThumbnail--mediaQuery: 150px;
+// < 1080px
+$frontpage__largeThumbnail--mediaQueryLarge: 250px;
+$frontpage__smallThumbnail--mediaQueryLarge: 125px;
 
-// >1024px
-//$frontpage__largeThumbnail : 300px;
-//$frontpage__smallThumbnail : 150px;
+// < 700px
+$frontpage__largeThumbnail--mediaQueryMedium: 200px;
+$frontpage__smallThumbnail--mediaQueryMedium: 100px;
 
-// >640px
-//$frontpage__largeThumbnail : 250px;
-//$frontpage__smallThumbnail : 125px;
+// < 400px
+$frontpage__largeThumbnail--mediaQuerySmall: 150px;
+$frontpage__smallThumbnail--mediaQuerySmall: 50px;
 
 // MIXINS
 // credit to Ana Tudor : https://codepen.io/thebabydino/pen/XbxKbL

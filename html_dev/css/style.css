@@ -203,7 +203,7 @@ h1 {
   background-size: cover;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1280px) {
   /* line 3, ../scss/partials/_frontpage_mediaquery.scss */
   .frontpage {
     flex-wrap: wrap;
@@ -248,37 +248,70 @@ h1 {
   }
 
   /* line 51, ../scss/partials/_frontpage_mediaquery.scss */
-  .flexImageGallery__largeThumbnail {
-    width: 250px;
-    height: 250px;
-  }
-
-  /* line 57, ../scss/partials/_frontpage_mediaquery.scss */
-  .flexImageGallery__smallThumbnail {
-    width: 150px;
-    height: 150px;
-  }
-
-  /* line 63, ../scss/partials/_frontpage_mediaquery.scss */
   .frontpage__textContainer {
     flex: 0 0 100%;
   }
 
-  /* line 68, ../scss/partials/_frontpage_mediaquery.scss */
+  /* line 56, ../scss/partials/_frontpage_mediaquery.scss */
   .textContainer__textSummary {
     margin: auto;
+    width: 80%;
     position: relative;
     top: 0;
     transform: translateY(0);
   }
 
-  /* line 76, ../scss/partials/_frontpage_mediaquery.scss */
+  /* line 65, ../scss/partials/_frontpage_mediaquery.scss */
   .displayNone {
     display: none;
   }
 
-  /* line 81, ../scss/partials/_frontpage_mediaquery.scss */
+  /* line 70, ../scss/partials/_frontpage_mediaquery.scss */
   .socialMedia--hexagon {
+    width: 50px;
+    height: 50px;
+  }
+
+  /* line 76, ../scss/partials/_frontpage_mediaquery.scss */
+  .flexImageGallery__largeThumbnail {
+    width: 200px;
+    height: 200px;
+  }
+
+  /* line 82, ../scss/partials/_frontpage_mediaquery.scss */
+  .flexImageGallery__smallThumbnail {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media (max-width: 1600px) {
+  /* line 91, ../scss/partials/_frontpage_mediaquery.scss */
+  .flexImageGallery__largeThumbnail {
+    width: 250px;
+    height: 250px;
+  }
+
+  /* line 97, ../scss/partials/_frontpage_mediaquery.scss */
+  .flexImageGallery__smallThumbnail {
+    width: 125px;
+    height: 125px;
+  }
+}
+@media (min-width: 1080px) and (max-width: 1280px) {
+  /* line 106, ../scss/partials/_frontpage_mediaquery.scss */
+  .textContainer__textSummary {
+    width: 90%;
+  }
+}
+@media (max-width: 600px) {
+  /* line 114, ../scss/partials/_frontpage_mediaquery.scss */
+  .flexImageGallery__largeThumbnail {
+    width: 150px;
+    height: 150px;
+  }
+
+  /* line 120, ../scss/partials/_frontpage_mediaquery.scss */
+  .flexImageGallery__smallThumbnail {
     width: 50px;
     height: 50px;
   }
